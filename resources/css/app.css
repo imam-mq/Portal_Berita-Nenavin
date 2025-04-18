@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom class untuk menghilangkan scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none; /* Untuk Internet Explorer */
+    scrollbar-width: none; /* Untuk Firefox */
+}
+
+/* Efek drag-scroll */
+.category-container {
+    cursor: grab;
+}
+.category-container:active {
+    cursor: grabbing;
+}
+
